@@ -1,6 +1,7 @@
 import React from 'react'
 import { Avatar, Box, Button, Card, CardContent, Container, TextField, Typography } from '@mui/material'
 import Layout from '../components/Layout'
+import bg from '../assets/img/bg.jpg'
 
 export default function Login() {
   return (
@@ -10,6 +11,8 @@ export default function Login() {
           width: "100vw",
           minHeight: "100vh",
           display: "flex",
+          background: `url(${bg})`,
+          backgroundRepeat: 'no-repeat',
           justifyContent: "center",
           flexDirection: "column",
           alignItems: "center",
