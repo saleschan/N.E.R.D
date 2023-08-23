@@ -1,7 +1,7 @@
 import React from 'react'
 import { Avatar, Box, Button, Card, CardContent, Container, TextField, Typography } from '@mui/material'
 import Layout from '../components/Layout'
-import bg from '../assets/img/bg.jpg'
+import "../global.css"
 
 export default function Login() {
   return (
@@ -11,15 +11,26 @@ export default function Login() {
           width: "100vw",
           minHeight: "100vh",
           display: "flex",
-          background: `url(${bg})`,
-          backgroundRepeat: 'no-repeat',
           justifyContent: "center",
           flexDirection: "column",
           alignItems: "center",
         }}>
 
           <Card sx={{ width: "50%", minHeight: "80%" }}>
-            <CardContent>
+            <CardContent sx={{
+                borderRadius: '10px',
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                zIndex: '999',
+                textAlign: 'center',
+                padding: '30px 16px',
+                transform: 'translate(-50%, -50%)',
+                background: 'rgba(225, 225, 225, 0.133)',
+                border: '1px solid #fff',
+                backdropFilter: 'blur(3px)',
+                boxShadow: '0 0 6px 0 rgba(29, 29, 29, 0.203)',
+            }}>
               <Box mb={10}>
                 <Container sx={{
                   display: "flex",
@@ -28,26 +39,31 @@ export default function Login() {
                   flexDirection: "column",
                 }}>
 
-                  <Typography mb={1} variant='h3'>
+                  <Typography mb={1} variant='h3' sx={{color: 'white'}}>
                     Login
                   </Typography>
                   <Avatar sx={{ background: '#cccccc' }}></Avatar>
                 </Container>
               </Box>
-              <Box>
-                <TextField
+              <Box color={'white'}>
+                <TextField 
+                  className='branco'
                   fullWidth
-                  placeholder='email'
+                  variant='standard'
+                  label='email'
                   type={'email'}
-                  sx={{ marginTop: 2.5, marginBottom: 2.5 }}
+                  sx={{ marginTop: 2.5, marginBottom: 2.5}}
                   required
                 />
 
                 <TextField
+                  className='branco'
                   fullWidth
-                  placeholder='senha'
+                  
+                  variant='standard'
+                  label='pass'
                   type={'password'}
-                  sx={{ marginTop: 2.5, marginBottom: 2.5 }}
+                  sx={{ marginTop: 2.5, marginBottom: 2.5}}
                   required
                 />
               </Box>
@@ -62,12 +78,12 @@ export default function Login() {
               >
                 Entrar
               </Button>
+              <Typography mt={2.5} sx={{}}>
+                  Não possui uma conta? Clique aqui
+                  
+              </Typography>
             </CardContent>
           </Card>
-          <Typography mt={2.5}>
-              Não possui uma conta? Clique aqui
-              
-          </Typography>
 
         </Container>
       </form>
