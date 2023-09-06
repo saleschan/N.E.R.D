@@ -46,23 +46,24 @@ export default function Login() {
                 </Container>
               </Box>
               <Box color={'white'}>
-                <TextField 
-                  className='branco'
+                <TextField
                   fullWidth
+                  InputProps={{ style: { color: 'white' } }}
+                  InputLabelProps={{ required: false }}
                   variant='standard'
-                  label='email'
+                  label='Email'
                   type={'email'}
                   sx={{ marginTop: 2.5, marginBottom: 2.5}}
                   required
                 />
 
                 <TextField
-                  className='branco'
+                  InputProps={{ style: { color: 'white' } }}
                   fullWidth
-                  
                   variant='standard'
-                  label='pass'
+                  label='Pass'
                   type={'password'}
+                  InputLabelProps={{ required: false }}
                   sx={{ marginTop: 2.5, marginBottom: 2.5}}
                   required
                 />
