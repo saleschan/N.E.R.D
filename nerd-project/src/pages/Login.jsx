@@ -48,7 +48,6 @@ export default function Login() {
               <Box color={'white'}>
                 <TextField
                   fullWidth
-                  InputProps={{ style: { color: 'white' } }}
                   InputLabelProps={{ required: false }}
                   variant='standard'
                   label='Email'
@@ -58,24 +57,24 @@ export default function Login() {
                 />
 
                 <TextField
-                  InputProps={{ style: { color: 'white' } }}
                   fullWidth
                   variant='standard'
                   label='Pass'
                   type={'password'}
                   InputLabelProps={{ required: false }}
-                  sx={{ marginTop: 2.5, marginBottom: 2.5}}
+                  sx={{ marginTop: 2.5, marginBottom: 2.5, color: 'secondary.lightQ'}}
                   required
                 />
               </Box>
-              <Button sx={{
-                marginTop: 2.5,
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              variant='contained'
-              color='secondary'
+              <Button 
+                sx={{
+                  marginTop: 2.5,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  color: 'primary.light'
+                }}
+                variant='contained'
               >
                 Entrar
               </Button>
