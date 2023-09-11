@@ -62,7 +62,7 @@ export default function Login() {
                   label='Pass'
                   type={'password'}
                   InputLabelProps={{ required: false }}
-                  sx={{ marginTop: 2.5, marginBottom: 2.5, color: 'secondary.lightQ'}}
+                  sx={{ marginTop: 2.5, marginBottom: 2.5, color: 'secondary.light'}}
                   required
                 />
               </Box>
