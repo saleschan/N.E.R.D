@@ -8,7 +8,7 @@ export default function Layout({ children }) {
         height: '100vh',
         width: '100vw',
         overflow: 'auto',
-        background: `url(${bg})`
+        background: '#001C30'
     }}>
         {children} 
     </Box>

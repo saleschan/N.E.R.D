@@ -4,9 +4,9 @@ export const authTheme = createTheme({
     palette: {
         mode: 'dark',
         primary: {
-            main: '#4b0082',
-            light: '#fff',
-            dark: '#333666'
+            main: '#176B87',
+            light: '#64CCC5',
+            dark: '#DAFFFB'
         }, 
 
         secondary: {
