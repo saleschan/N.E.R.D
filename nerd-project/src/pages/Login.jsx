@@ -1,103 +1,113 @@
-import React from 'react'
-import { Avatar, Box, Button, Card, CardContent, Container, Grid, TextField, Typography } from '@mui/material'
-import Layout from '../components/Layout'
-import fotin from '../assets/img/fotin.png'
-import "../global.css"
+import React from "react";
+import {
+  Avatar,
+  Box,
+  Button,
+  Card,
+  CardContent,
+  Container,
+  Grid,
+  TextField,
+  Typography,
+} from "@mui/material";
+import Layout from "../components/Layout";
+import fotin from "../assets/img/fotin.png";
+import "../global.css";
 
 export default function Login() {
   return (
-    
     <Layout>
-    <Grid container rowSpacing={1} columns={{ xs: 4, sm: 8, md: 12 }}>
-      <form>
-        <Container sx={{
-          width: "100vw",
-          minHeight: "100vh",
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          alignItems: "center",
-        }}>
-            <Card sx={{ width: "50%", minHeight: "80%" }}>
-              <Grid item xs={4} >
-              <CardContent sx={{
-                  borderRadius: '10px',
-                  position: 'absolute',
-                  top: '50%',
-                  left: '50%',
-                  zIndex: '999',
-                  textAlign: 'center',
-                  padding: '30px 16px',
-                  transform: 'translate(-50%, -50%)',
-                  background: 'rgba(225, 225, 225, 0.133)',
-                  border: '1px solid #fff',
-                  backdropFilter: 'blur(3px)',
-                  boxShadow: '0 0 6px 0 rgba(29, 29, 29, 0.203)',
-                }}>
+      <Box display='flex' justifyContent='space-around' alignItems='center'>
+        <Box>
+          <form>
+            <Container
+              sx={{
+                minHeight: "100vh",
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <Card sx={{ width: "90%", minHeight: "80%" }}>
+                <CardContent
+                  sx={{
+                    borderRadius: 2,
+                    textAlign: "center",
+                      pt: 3.75,
+                      pd: 3.75,
+                      pl: 2,
+                      pr: 2,
+                    background: "rgba(225, 225, 225, 0.133)",
+                    border: "1px solid #fff",
+                    backdropFilter: "blur(3px)",
+                    boxShadow: "0 0 6px 0 rgba(29, 29, 29, 0.203)",
+                  }}
+                >
                   <Box mb={10}>
-                    <Container sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                      flexDirection: "column",
-                    }}>
-
-                      <Typography mb={1} variant='h3' sx={{color: 'white'}}>
+                    <Container
+                      sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        flexDirection: "column",
+                      }}
+                    >
+                      <Typography mb={1} variant="h3" sx={{ color: "white" }}>
                         Login
                       </Typography>
-                      <Avatar sx={{ background: '#cccccc' }}></Avatar>
+                      <Avatar sx={{ background: "#cccccc" }}></Avatar>
                     </Container>
                   </Box>
-                  <Box color={'white'}>
+                  <Box color={"white"}>
                     <TextField
                       fullWidth
                       InputLabelProps={{ required: false }}
-                      variant='standard'
-                      label='Email'
-                      type={'email'}
-                      sx={{ marginTop: 2.5, marginBottom: 2.5}}
+                      variant="standard"
+                      label="Email"
+                      type={"email"}
+                      sx={{ mt: 2.5, mb: 2.5 }}
                       required
-                      />
+                    />
 
                     <TextField
                       fullWidth
-                      variant='standard'
-                      label='Pass'
-                      type={'password'}
+                      variant="standard"
+                      label="Pass"
+                      type={"password"}
                       InputLabelProps={{ required: false }}
-                      sx={{ marginTop: 2.5, marginBottom: 2.5, color: 'secondary.light'}}
+                      sx={{
+                        mt: 2.5,
+                        mb: 2.5,
+                        color: "secondary.light",
+                      }}
                       required
-                      />
+                    />
                   </Box>
-                  <Button 
+                  <Button
                     sx={{
-                      marginTop: 2.5,
+                      mt: 2.5,
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
-                      color: 'primary.light'
+                      color: "primary.light",
                     }}
-                    variant='contained'
-                    >
+                    variant="contained"
+                  >
                     Entrar
                   </Button>
-                  <Typography mt={2.5} sx={{}}>
-                      Não possui uma conta? Clique aqui
-                      
+                  <Typography mt={2.5}>
+                    Não possui uma conta? Clique aqui
                   </Typography>
-                </CardContent> 
-                hi
-              </Grid>
-              <Grid item xs={6}>
-                <Card>
-                  hello world
-                </Card>
-              </Grid>
-            </Card>
-
-        </Container>
-      </form>
-    </Grid>
+                </CardContent>
+              </Card>
+            </Container>
+          </form>
+        </Box>
+        <Box>
+          <img height={300} width={300} src={fotin} />
+        </Box>
+      </Box>
     </Layout>
-  )
+  );
 }
