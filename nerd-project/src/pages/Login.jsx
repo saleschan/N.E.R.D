@@ -1,12 +1,14 @@
 import React from 'react'
 import { Avatar, Box, Button, Card, CardContent, Container, Grid, TextField, Typography } from '@mui/material'
 import Layout from '../components/Layout'
+import fotin from '../assets/img/fotin.png'
 import "../global.css"
 
 export default function Login() {
   return (
     
     <Layout>
+    <Grid container rowSpacing={1} columns={{ xs: 4, sm: 8, md: 12 }}>
       <form>
         <Container sx={{
           width: "100vw",
@@ -16,10 +18,9 @@ export default function Login() {
           flexDirection: "column",
           alignItems: "center",
         }}>
-          <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
             <Card sx={{ width: "50%", minHeight: "80%" }}>
-              <Grid>
-                <CardContent sx={{
+              <Grid item xs={4} >
+              <CardContent sx={{
                   borderRadius: '10px',
                   position: 'absolute',
                   top: '50%',
@@ -84,13 +85,19 @@ export default function Login() {
                       Não possui uma conta? Clique aqui
                       
                   </Typography>
-                </CardContent>
+                </CardContent> 
+                hi
+              </Grid>
+              <Grid item xs={6}>
+                <Card>
+                  hello world
+                </Card>
               </Grid>
             </Card>
-          </Grid>
 
         </Container>
       </form>
+    </Grid>
     </Layout>
   )
 }
