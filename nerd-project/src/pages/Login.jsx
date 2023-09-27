@@ -11,7 +11,10 @@ import {
   Typography,
 } from "@mui/material";
 import Layout from "../components/Layout";
+import nerd from "../assets/img/nerd.svg";
 import fotin from "../assets/img/fotin.png";
+import { Carousel } from "react-responsive-carousel"
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../global.css";
 
 export default function Login() {
@@ -105,7 +108,20 @@ export default function Login() {
           </form>
         </Box>
         <Box>
-          <img height={300} width={300} src={fotin} />
+        <Carousel autoPlay={true} infiniteLoop={true} >
+                <div>
+                    <img src={nerd} />
+                    <p className="legend">Ju linda</p>
+                </div>
+                <div>
+                    <img src={fotin} />
+                    <p className="legend">Ju linda</p>
+                </div>
+                <div>
+                    <img src={nerd} />
+                    <p className="legend">Ju linda</p>
+                </div>
+          </Carousel>
         </Box>
       </Box>
     </Layout>
