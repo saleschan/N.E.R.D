@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
-.branco {
-    color: white
+.slider {
+    width: 500px;
+    height: 500px;
 }

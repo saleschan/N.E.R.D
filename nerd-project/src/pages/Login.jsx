@@ -42,7 +42,7 @@ export default function Login() {
                       pl: 2,
                       pr: 2,
                     background: "rgba(225, 225, 225, 0.133)",
-                    border: "1px solid #fff",
+                    border: "1px solid ",
                     backdropFilter: "blur(3px)",
                     boxShadow: "0 0 6px 0 rgba(29, 29, 29, 0.203)",
                   }}
@@ -108,7 +108,7 @@ export default function Login() {
           </form>
         </Box>
         <Box>
-        <Carousel autoPlay={true} infiniteLoop={true} >
+        <Carousel className="slider" autoPlay infiniteLoop centerMode showArrows={false} onClickThumb={} >
                 <div>
                     <img src={nerd} />
                     <p className="legend">Ju linda</p>
@@ -121,7 +121,7 @@ export default function Login() {
                     <img src={nerd} />
                     <p className="legend">Ju linda</p>
                 </div>
-          </Carousel>
+        </Carousel>
         </Box>
       </Box>
     </Layout>
