@@ -11,16 +11,17 @@ import {
   Typography,
 } from "@mui/material";
 import Layout from "../components/Layout";
-import nerd from "../assets/img/nerd.svg";
+import nerd from "../assets/img/nerd.png";
 import fotin from "../assets/img/fotin.png";
-import { Carousel } from "react-responsive-carousel"
+import nerdbgremoved from "../assets/img/nerdbgremoved.png"
+import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../global.css";
 
 export default function Login() {
   return (
     <Layout>
-      <Box display='flex' justifyContent='space-around' alignItems='center'>
+      <Box display="flex" justifyContent="space-around" alignItems="center">
         <Box>
           <form>
             <Container
@@ -37,10 +38,10 @@ export default function Login() {
                   sx={{
                     borderRadius: 2,
                     textAlign: "center",
-                      pt: 3.75,
-                      pd: 3.75,
-                      pl: 2,
-                      pr: 2,
+                    pt: 3.75,
+                    pd: 3.75,
+                    pl: 2,
+                    pr: 2,
                     background: "rgba(225, 225, 225, 0.133)",
                     border: "1px solid ",
                     backdropFilter: "blur(3px)",
@@ -57,9 +58,8 @@ export default function Login() {
                       }}
                     >
                       <Typography mb={1} variant="h3" sx={{ color: "white" }}>
-                        Login
+                        <img src={nerdbgremoved} width={150} height={150} />
                       </Typography>
-                      <Avatar sx={{ background: "#cccccc" }}></Avatar>
                     </Container>
                   </Box>
                   <Box color={"white"}>
@@ -108,20 +108,31 @@ export default function Login() {
           </form>
         </Box>
         <Box>
-        <Carousel className="slider" autoPlay infiniteLoop centerMode showArrows={false} onClickThumb={} >
-                <div>
-                    <img src={nerd} />
-                    <p className="legend">Ju linda</p>
-                </div>
-                <div>
-                    <img src={fotin} />
-                    <p className="legend">Ju linda</p>
-                </div>
-                <div>
-                    <img src={nerd} />
-                    <p className="legend">Ju linda</p>
-                </div>
-        </Carousel>
+          <Carousel
+            className="slider"
+            autoPlay
+            infiniteLoop
+            showArrows={false}
+            showThumbs={false}
+            showStatus={false}
+            showIndicators={false}
+          >
+            <div>
+              <img src={nerd} />
+            </div>
+            <div>
+              <img src={fotin} />
+            </div>
+            <div>
+              <img src={nerd} />
+            </div>
+            <div>
+              <img src={nerd} />
+            </div> 
+            <div>
+              <img src={nerd} />
+            </div> 
+          </Carousel>
         </Box>
       </Box>
     </Layout>
