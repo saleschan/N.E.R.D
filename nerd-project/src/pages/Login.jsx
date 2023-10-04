@@ -13,7 +13,7 @@ import {
 import Layout from "../components/Layout";
 import nerd from "../assets/img/nerd.png";
 import fotin from "../assets/img/fotin.png";
-import nerdbgremoved from "../assets/img/nerdbgremoved.png"
+import nerdLogo from "../assets/img/nerdLogo.png"
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../global.css";
@@ -57,8 +57,8 @@ export default function Login() {
                         flexDirection: "column",
                       }}
                     >
-                      <Typography mb={1} variant="h3" sx={{ color: "white" }}>
-                        <img src={nerdbgremoved} width={150} height={150} />
+                      <Typography mb={1} variant="h3" pt={3} >
+                        <img src={nerdLogo} width={150} className="logo" />
                       </Typography>
                     </Container>
                   </Box>
@@ -117,21 +117,21 @@ export default function Login() {
             showStatus={false}
             showIndicators={false}
           >
-            <div>
-              <img src={nerd} />
-            </div>
-            <div>
-              <img src={fotin} />
-            </div>
-            <div>
-              <img src={nerd} />
-            </div>
-            <div>
-              <img src={nerd} />
-            </div> 
-            <div>
-              <img src={nerd} />
-            </div> 
+              <Card>
+                <img src={nerd}  width={'550px'} height={'375px'} />
+              </Card>
+              <Card>
+                <img src={fotin} />
+              </Card>
+              <Card>
+                <img src={nerd} />
+              </Card>
+              <Card>
+                <img src={nerd} />
+              </Card> 
+              <Card>
+                <img src={nerd} />
+              </Card> 
           </Carousel>
         </Box>
       </Box>
