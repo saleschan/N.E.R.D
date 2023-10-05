@@ -1,4 +1,9 @@
 import React from "react";
+
+import nerd from "../assets/img/nerd.png";
+import fotin from "../assets/img/fotin.png";
+import nerdLogo from "../assets/img/nerdLogo.png"
+
 import {
   Avatar,
   Box,
@@ -10,10 +15,8 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import Layout from "../components/Layout";
-import nerd from "../assets/img/nerd.png";
-import fotin from "../assets/img/fotin.png";
-import nerdLogo from "../assets/img/nerdLogo.png"
+
+import { Layout, Slide } from '../components'
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../global.css";
@@ -109,7 +112,7 @@ export default function Login() {
         </Box>
         <Box>
           <Carousel
-            className="slider"
+            width={750}
             autoPlay
             infiniteLoop
             showArrows={false}
@@ -117,21 +120,11 @@ export default function Login() {
             showStatus={false}
             showIndicators={false}
           >
-              <Card>
-                <img src={nerd}  width={'550px'} height={'375px'} />
-              </Card>
-              <Card>
-                <img src={fotin} />
-              </Card>
-              <Card>
-                <img src={nerd} />
-              </Card>
-              <Card>
-                <img src={nerd} />
-              </Card> 
-              <Card>
-                <img src={nerd} />
-              </Card> 
+            <Slide src={nerd} />
+            <Slide src={fotin} />
+            <Slide src={nerd} />
+            <Slide src={nerd} />
+            <Slide src={nerd} />
           </Carousel>
         </Box>
       </Box>
