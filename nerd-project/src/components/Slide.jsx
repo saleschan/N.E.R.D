@@ -1,13 +1,13 @@
-import { Box } from "@mui/material";
+import { Card } from "@mui/material";
 
 export default function Slide({ src }) {
     return (
-        <Box sx={{
+        <Card sx={{
             display: 'flex',
             width: '750px',
             height: '475px',
         }}>
             <img src={src} />
-        </Box>
+        </Card>
     )
 }

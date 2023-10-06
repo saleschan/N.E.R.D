@@ -1,7 +1,7 @@
 import React from "react";
 
-import nerd from "../assets/img/nerd.png";
-import fotin from "../assets/img/fotin.png";
+import mario from "../assets/img/mario.webp"
+import red from "../assets/img/red.jpg"
 import nerdLogo from "../assets/img/nerdLogo.png"
 
 import {
@@ -103,7 +103,12 @@ export default function Login() {
                     Entrar
                   </Button>
                   <Typography mt={2.5}>
-                    Não possui uma conta? Clique aqui
+                  <p>
+                    Não possui uma conta?
+                  </p>
+                    <a href="qhome">
+                      Clique aqui
+                    </a>
                   </Typography>
                 </CardContent>
               </Card>
@@ -120,11 +125,11 @@ export default function Login() {
             showStatus={false}
             showIndicators={false}
           >
-            <Slide src={nerd} />
-            <Slide src={fotin} />
-            <Slide src={nerd} />
-            <Slide src={nerd} />
-            <Slide src={nerd} />
+            <Slide src={red} />
+            <Slide src={mario} />
+            <Slide src={red} />
+            <Slide src={mario} />
+            <Slide src={red} />
           </Carousel>
         </Box>
       </Box>
