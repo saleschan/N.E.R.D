@@ -1,5 +1,4 @@
 import React from 'react'
-import { Box } from '@mui/system'
 import bg from '../assets/img/bg.jpg'
 
 export default function LayoutBg({ children }) {

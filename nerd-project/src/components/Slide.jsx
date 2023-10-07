@@ -6,6 +6,7 @@ export default function Slide({ src }) {
             display: 'flex',
             width: '750px',
             height: '475px',
+            borderRadius: 3
         }}>
             <img src={src} />
         </Card>
