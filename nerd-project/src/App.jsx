@@ -7,7 +7,7 @@ import { ThemeProvider } from '@mui/material'
 import { authTheme } from './themes/authTheme'
 
 
-export default function App() {
+export default function App() {safasfsacafvsfGIT 
   return (
     <BrowserRouter>
       <ThemeProvider theme={authTheme}>
