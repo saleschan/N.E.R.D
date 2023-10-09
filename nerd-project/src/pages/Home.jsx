@@ -4,15 +4,23 @@ import { Layout, Slide } from '../components'
 import { Carousel } from 'react-responsive-carousel'
 
 export default function Home() {
+  const array = [
+    <Slide src={nerd} />,
+    <Slide src={nerd} />,
+    <Slide src={nerd} />,
+    <Slide src={nerd} />
+  ]
+
+
   return (
     <Layout>
-      <Carousel>  
-          <div>
-            <Slide src={nerd} />
-          </div>
-          <div>
-            <Slide src={nerd} />
-          </div>
+      <Carousel
+        width={'100%'}
+        swipeable={true}
+        emulateTouch={true}
+        centerMode
+      >    
+        {array}
       </Carousel>
     </Layout>
   )
